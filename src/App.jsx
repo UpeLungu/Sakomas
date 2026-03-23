@@ -53,8 +53,16 @@ export default function App() {
       <header className="topbar">
         <div className="container topbar-inner">
           <div>
-            <div className="brand-title">Sakomas Logistics Limited</div>
-            <div className="brand-subtitle">Reliable Transport &amp; Logistics Solutions</div>
+         <div className="brand">
+  <img src="/logo.jpg" alt="Sakomas Logistics" className="logo" />
+
+  <div>
+    <div className="brand-title">Sakomas Logistics Limited</div>
+    <div className="brand-subtitle">
+      Reliable Transport &amp; Logistics Solutions
+    </div>
+  </div>
+</div>
           </div>
 
           <nav className="nav">
