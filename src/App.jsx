@@ -52,8 +52,7 @@ export default function App() {
     <div className="site-shell">
       <header className="topbar">
         <div className="container topbar-inner">
-          <div>
-         <div className="brand">
+          <div className="brand">
   <img src="/logo.jpg" alt="Sakomas Logistics" className="logo" />
 
   <div>
@@ -63,8 +62,6 @@ export default function App() {
     </div>
   </div>
 </div>
-          </div>
-
           <nav className="nav">
             <a href="#about">About</a>
             <a href="#services">Services</a>
