@@ -54,14 +54,25 @@ export default function App() {
         <div className="container topbar-inner">
 
           {/* ONLY CHANGE: added logo */}
-          <div className="brand">
-           <img src="/logo.jpg" alt="Sakomas Logistics" className="logo" />
+          <header className="topbar">
+  <div className="container topbar-inner">
+    <div className="brand">
+      <img src="/logo.jpg" alt="Sakomas Logistics" className="logo" />
+      <div>
+        <div className="brand-title">Sakomas Logistics Limited</div>
+        <div className="brand-subtitle">Reliable Transport &amp; Logistics Solutions</div>
+      </div>
+    </div>
 
-            <div>
-              <div className="brand-title">Sakomas Logistics Limited</div>
-              <div className="brand-subtitle">Reliable Transport &amp; Logistics Solutions</div>
-            </div>
-          </div>
+    <nav className="nav">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#clients">Clients</a>
+      <a href="#compliance">Compliance</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
           {/* EVERYTHING BELOW UNCHANGED */}
           <nav className="nav">
