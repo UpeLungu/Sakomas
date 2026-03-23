@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 export default function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const services = [
     {
       title: "Freight Transport",
@@ -54,15 +58,25 @@ export default function App() {
         <div className="container topbar-inner">
           <div>
             <div className="brand-title">Sakomas Logistics Limited</div>
-            <div className="brand-subtitle">Reliable Transport &amp; Logistics Solutions</div>
+            <div className="brand-subtitle">
+              Reliable Transport &amp; Logistics Solutions
+            </div>
           </div>
 
-          <nav className="nav">
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#clients">Clients</a>
-            <a href="#compliance">Compliance</a>
-            <a href="#contact">Contact</a>
+          <button
+            className="menu-btn"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+          >
+            ☰
+          </button>
+
+          <nav className={`nav ${menuOpen ? "open" : ""}`}>
+            <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
+            <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
+            <a href="#clients" onClick={() => setMenuOpen(false)}>Clients</a>
+            <a href="#compliance" onClick={() => setMenuOpen(false)}>Compliance</a>
+            <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
           </nav>
         </div>
       </header>
