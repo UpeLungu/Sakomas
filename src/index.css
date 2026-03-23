@@ -399,11 +399,9 @@ a {
 
 .footer-inner {
   display: flex;
-  flex-direction: column;   /* stack items */
-  align-items: center;      /* center horizontally */
-  justify-content: center;
-  text-align: center;       /* center text */
-  gap: 0.4rem;
+  justify-content: center;   /* centers horizontally */
+  align-items: center;       /* centers vertically */
+  text-align: center;        /* centers text */
   padding: 1.5rem 0;
   color: #64748b;
   font-size: 0.95rem;
