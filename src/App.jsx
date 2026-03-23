@@ -51,12 +51,16 @@ export default function App() {
   return (
     <div className="site-shell">
       <header className="topbar">
-        <div className="container topbar-inner">
-          <div>
-            <div className="brand-title">Sakomas Logistics Limited</div>
-            <div className="brand-subtitle">Reliable Transport &amp; Logistics Solutions</div>
-          </div>
+    <div className="brand">
+    <img src="/logo.jpg" alt="Sakomas Logistics" className="logo" />
 
+    <div className="brand-text">
+    <div className="brand-title">Sakomas Logistics Limited</div>
+    <div className="brand-subtitle">
+      Reliable Transport &amp; Logistics Solutions
+      </div>
+    </div>
+  </div>
           <nav className="nav">
             <a href="#about">About</a>
             <a href="#services">Services</a>
