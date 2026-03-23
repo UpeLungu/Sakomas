@@ -52,45 +52,44 @@ a {
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem 0;
+  position: relative;
 }
 
-/* logo + brand */
+/* brand / logo */
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
+  min-width: 0;
 }
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+
 .logo {
-  width: 70px;   /* was 60px */
-  height: 70px;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 16px;   /* increase spacing */
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
 }
 
 .brand-title {
-  font-size: 1.25rem;  /* slightly reduce */
-}
-
-.brand-subtitle {
-  font-size: 0.85rem;
-}
-}
-
-.brand-title {
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   font-weight: 800;
   letter-spacing: -0.02em;
   line-height: 1.1;
+  color: var(--text);
 }
 
 .brand-subtitle {
   margin-top: 0.2rem;
   color: #64748b;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   line-height: 1.2;
 }
 
@@ -110,6 +109,27 @@ a {
 
 .nav a:hover {
   color: #111827;
+}
+
+/* mobile menu button */
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #0f172a;
+  padding: 0.25rem 0.4rem;
+}
+
+/* anchor offset for sticky header */
+#about,
+#services,
+#clients,
+#compliance,
+#contact {
+  scroll-margin-top: 120px;
 }
 
 .hero {
@@ -386,106 +406,12 @@ a {
   font-size: 0.95rem;
 }
 
-/* turn off menu button for now */
-.menu-btn {
-  display: none !important;
-}
-
-@media (max-width: 900px) {
-  .nav {
-    display: none;
-  }
-
-  .hero-grid,
-  .about-grid,
-  .two-grid,
-  .compliance-grid,
-  .contact-box,
-  .three-grid,
-  .client-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .stats-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .footer-inner,
-  .topbar-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .logo {
-    width: 52px;
-    height: 52px;
-  }
-
-  .brand-title {
-    font-size: 1.1rem;
-  }
-
-  .brand-subtitle {
-    font-size: 0.85rem;
-  }
-}
-
-@media (max-width: 640px) {
-  .container {
-    width: min(var(--container), calc(100% - 1.25rem));
-  }
-
-  .section {
-    padding: 4rem 0;
-  }
-
-  .hero-grid {
-    padding: 4rem 0 4.5rem;
-  }
-
-  .stats-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-box {
-    padding: 1.25rem;
-  }
-}
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.brand-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.logo {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  display: block;
-}
-
-.menu-btn {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.8rem;
-  line-height: 1;
-  cursor: pointer;
-  color: #0f172a;
-  padding: 0.25rem 0.4rem;
-}
-
 @media (max-width: 900px) {
   .topbar-inner {
-    position: relative;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
   }
 
   .menu-btn {
@@ -518,6 +444,25 @@ a {
     width: 100%;
   }
 
+  .hero-grid,
+  .about-grid,
+  .two-grid,
+  .compliance-grid,
+  .contact-box,
+  .three-grid,
+  .client-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .logo {
     width: 52px;
     height: 52px;
@@ -529,5 +474,31 @@ a {
 
   .brand-subtitle {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: min(var(--container), calc(100% - 1.25rem));
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .hero-grid {
+    padding: 4rem 0 4.5rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-box {
+    padding: 1.25rem;
+  }
+
+  .nav {
+    min-width: 200px;
   }
 }
