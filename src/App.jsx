@@ -2,7 +2,9 @@ import { useState } from "react";
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
-   {
+
+  const services = [
+    {
       title: "Freight Transport",
       description:
         "Reliable road freight transportation across Zambia for safe, efficient, and timely movement of goods between suppliers, warehouses, distribution centers, and customers.",
@@ -52,36 +54,36 @@ export default function App() {
 
   return (
     <div className="site-shell">
-    <header className="topbar">
-  <div className="container topbar-inner">
-    <div className="brand">
-      <img src="/logo.jpg" alt="Sakomas Logistics" className="logo" />
-      <div>
-        <div className="brand-title">Sakomas Logistics Limited</div>
-        <div className="brand-subtitle">
-          Reliable Transport &amp; Logistics Solutions
+      <header className="topbar">
+        <div className="container topbar-inner">
+          <div className="brand">
+            <img src="/logo.jpg" alt="Sakomas Logistics" className="logo" />
+            <div>
+              <div className="brand-title">Sakomas Logistics Limited</div>
+              <div className="brand-subtitle">
+                Reliable Transport &amp; Logistics Solutions
+              </div>
+            </div>
+          </div>
+
+          <button
+            className="menu-btn"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+            type="button"
+          >
+            ☰
+          </button>
+
+          <nav className={`nav ${menuOpen ? "open" : ""}`}>
+            <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
+            <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
+            <a href="#clients" onClick={() => setMenuOpen(false)}>Clients</a>
+            <a href="#compliance" onClick={() => setMenuOpen(false)}>Compliance</a>
+            <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
+          </nav>
         </div>
-      </div>
-    </div>
-
-    <button
-      className="menu-btn"
-      onClick={() => setMenuOpen(!menuOpen)}
-      aria-label="Toggle menu"
-      type="button"
-    >
-      ☰
-    </button>
-
-    <nav className={`nav ${menuOpen ? "open" : ""}`}>
-      <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
-      <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
-      <a href="#clients" onClick={() => setMenuOpen(false)}>Clients</a>
-      <a href="#compliance" onClick={() => setMenuOpen(false)}>Compliance</a>
-      <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
-    </nav>
-  </div>
-</header>
+      </header>
 
       <section className="hero">
         <div className="hero-glow" />
