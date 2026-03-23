@@ -55,7 +55,7 @@ export default function App() {
 
           {/* ONLY CHANGE: added logo */}
           <div className="brand">
-            <img src="public/logo.jpg" alt="Sakomas Logistics" className="logo" />
+           <img src="/logo.jpg" alt="Sakomas Logistics" className="logo" />
 
             <div>
               <div className="brand-title">Sakomas Logistics Limited</div>
