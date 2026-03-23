@@ -60,12 +60,24 @@ a {
   align-items: center;
   gap: 12px;
 }
-
 .logo {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  display: block;
+  width: 70px;   /* was 60px */
+  height: 70px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;   /* increase spacing */
+}
+
+.brand-title {
+  font-size: 1.25rem;  /* slightly reduce */
+}
+
+.brand-subtitle {
+  font-size: 0.85rem;
+}
 }
 
 .brand-title {
