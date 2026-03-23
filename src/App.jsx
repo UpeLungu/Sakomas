@@ -194,7 +194,7 @@ export default function App() {
             <p className="dark-text">
               Our services are designed to support logistics operations within Zambia
               and across the wider SADC region, enabling smoother trade, supply chain
-              coordination, and regional commerce.
+              coordination and regional commerce.
             </p>
           </div>
 
