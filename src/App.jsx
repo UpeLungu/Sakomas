@@ -291,7 +291,6 @@ export default function App() {
       <footer className="footer">
         <div className="container footer-inner">
           <p>© 2026 Sakomas Logistics Limited. All rights reserved.</p>
-          <p>Professional company showcase website</p>
         </div>
       </footer>
     </div>
