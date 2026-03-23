@@ -52,7 +52,6 @@ a {
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem 0;
-  position: relative;
 }
 
 /* logo + brand */
@@ -60,15 +59,13 @@ a {
   display: flex;
   align-items: center;
   gap: 12px;
-  min-width: 0;
 }
 
 .logo {
-  width: 64px;
-  height: 64px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
   display: block;
-  flex-shrink: 0;
 }
 
 .brand-title {
@@ -85,13 +82,18 @@ a {
   line-height: 1.2;
 }
 
-/* desktop nav */
+/* nav */
 .nav {
   display: flex;
   gap: 1.25rem;
   font-weight: 600;
   color: #334155;
   align-items: center;
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .nav a:hover {
@@ -372,21 +374,16 @@ a {
   font-size: 0.95rem;
 }
 
-/* mobile menu button */
+/* turn off menu button for now */
 .menu-btn {
-  display: none;
-  font-size: 1.7rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #0f172a;
-  padding: 0.25rem 0.5rem;
-  line-height: 1;
-  margin-left: auto;
+  display: none !important;
 }
 
-/* tablet/mobile */
 @media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+
   .hero-grid,
   .about-grid,
   .two-grid,
@@ -401,51 +398,23 @@ a {
     grid-template-columns: 1fr 1fr;
   }
 
-  .footer-inner {
+  .footer-inner,
+  .topbar-inner {
     flex-direction: column;
     align-items: flex-start;
   }
 
   .logo {
-    width: 54px;
-    height: 54px;
+    width: 52px;
+    height: 52px;
   }
 
   .brand-title {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
   }
 
   .brand-subtitle {
     font-size: 0.85rem;
-  }
-
-  .menu-btn {
-    display: block;
-  }
-
-  .nav {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: calc(100% - 2px);
-    right: 0;
-    min-width: 220px;
-    background: white;
-    padding: 1rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-    border: 1px solid var(--line);
-    z-index: 100;
-    gap: 0.85rem;
-  }
-
-  .nav.open {
-    display: flex;
-  }
-
-  .nav a {
-    display: block;
-    width: 100%;
   }
 }
 
@@ -468,28 +437,5 @@ a {
 
   .contact-box {
     padding: 1.25rem;
-  }
-
-  .topbar-inner {
-    gap: 0.75rem;
-    padding: 0.85rem 0;
-  }
-
-  .logo {
-    width: 48px;
-    height: 48px;
-  }
-
-  .brand-title {
-    font-size: 1rem;
-  }
-
-  .brand-subtitle {
-    font-size: 0.8rem;
-  }
-
-  .nav {
-    min-width: 200px;
-    right: 0;
   }
 }
