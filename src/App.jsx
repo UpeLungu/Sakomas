@@ -1,8 +1,4 @@
-import { useState } from "react";
-
 export default function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   const services = [
     {
       title: "Freight Transport",
@@ -56,32 +52,17 @@ export default function App() {
     <div className="site-shell">
       <header className="topbar">
         <div className="container topbar-inner">
-          <div className="brand">
-            <img src="/logo.jpg" alt="Sakomas Logistics" className="logo" />
-
-            <div className="brand-text">
-              <div className="brand-title">Sakomas Logistics Limited</div>
-              <div className="brand-subtitle">
-                Reliable Transport &amp; Logistics Solutions
-              </div>
-            </div>
+          <div>
+            <div className="brand-title">Sakomas Logistics Limited</div>
+            <div className="brand-subtitle">Reliable Transport &amp; Logistics Solutions</div>
           </div>
 
-          <button
-            className="menu-btn"
-            type="button"
-            aria-label="Toggle menu"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            ☰
-          </button>
-
-          <nav className={`nav ${menuOpen ? "open" : ""}`}>
-            <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
-            <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
-            <a href="#clients" onClick={() => setMenuOpen(false)}>Clients</a>
-            <a href="#compliance" onClick={() => setMenuOpen(false)}>Compliance</a>
-            <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
+          <nav className="nav">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#clients">Clients</a>
+            <a href="#compliance">Compliance</a>
+            <a href="#contact">Contact</a>
           </nav>
         </div>
       </header>
