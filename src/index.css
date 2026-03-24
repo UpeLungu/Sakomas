@@ -399,13 +399,15 @@ a {
 
 .footer-inner {
   display: flex;
-  justify-content: center;   /* centers horizontally */
-  align-items: center;       /* centers vertically */
-  text-align: center;        /* centers text */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: 1.5rem 0;
   color: #64748b;
   font-size: 0.95rem;
 }
+
+/* tablet/mobile */
 @media (max-width: 900px) {
   .topbar-inner {
     flex-direction: row;
@@ -459,8 +461,9 @@ a {
   }
 
   .footer-inner {
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .logo {
