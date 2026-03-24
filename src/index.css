@@ -157,7 +157,7 @@ a {
   justify-content: center;
 }
 
-/* make hero content organized and prevent cutting */
+.hero-left,
 .hero-grid > div:first-child {
   max-width: 760px;
   min-width: 0;
@@ -203,6 +203,7 @@ a {
 }
 
 .hero h1,
+.hero-title,
 .section h2,
 .section-dark h2 {
   margin: 1rem 0 0;
@@ -211,7 +212,8 @@ a {
   letter-spacing: -0.04em;
 }
 
-.hero h1 {
+.hero h1,
+.hero-title {
   max-width: 15ch;
   word-break: normal;
   overflow-wrap: anywhere;
@@ -555,11 +557,13 @@ a {
     padding: 4rem 0 4.5rem;
   }
 
+  .hero-left,
   .hero-grid > div:first-child {
     max-width: 100%;
   }
 
-  .hero h1 {
+  .hero h1,
+  .hero-title {
     max-width: 100%;
   }
 
@@ -575,12 +579,6 @@ a {
   .stats-grid {
     grid-template-columns: 1fr 1fr;
     margin-top: 0;
-  }
-
-  .footer-inner {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
   }
 
   .logo {
