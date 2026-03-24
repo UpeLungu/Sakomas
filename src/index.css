@@ -527,3 +527,50 @@ a {
     min-width: 200px;
   }
 }
+.transport-showcase {
+  margin-top: 2rem;
+  overflow: hidden;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 1rem;
+}
+
+.transport-track {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  animation: moveVehicles 18s linear infinite;
+}
+
+.vehicle-card {
+  flex: 0 0 auto;
+  padding: 0.85rem 1.1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+  white-space: nowrap;
+}
+
+@keyframes moveVehicles {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 900px) {
+  .vehicle-card {
+    font-size: 0.85rem;
+    padding: 0.75rem 0.95rem;
+  }
+
+  .transport-showcase {
+    margin-top: 1.5rem;
+  }
+}
