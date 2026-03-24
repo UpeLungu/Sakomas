@@ -122,10 +122,7 @@ export default function App() {
             <div className="transport-showcase">
               <div className="transport-track">
                 <div className="vehicle-image-card">
-                  <img
-                    src="/truck-1.jpg"
-                    alt="Long-distance freight truck"
-                  />
+                  <img src="/truck-1.jpg" alt="Long-distance freight truck" />
                   <span>Long-Distance Freight</span>
                 </div>
 
@@ -135,18 +132,12 @@ export default function App() {
                 </div>
 
                 <div className="vehicle-image-card">
-                  <img
-                    src="/cargo-1.jpg"
-                    alt="Cargo handling operations"
-                  />
+                  <img src="/cargo-1.jpg" alt="Cargo handling operations" />
                   <span>Cargo Handling</span>
                 </div>
 
                 <div className="vehicle-image-card">
-                  <img
-                    src="/courier-1.jpg"
-                    alt="Express courier delivery"
-                  />
+                  <img src="/courier-1.jpg" alt="Express courier delivery" />
                   <span>Express Courier</span>
                 </div>
 
@@ -156,10 +147,7 @@ export default function App() {
                 </div>
 
                 <div className="vehicle-image-card">
-                  <img
-                    src="/truck-1.jpg"
-                    alt="Long-distance freight truck"
-                  />
+                  <img src="/truck-1.jpg" alt="Long-distance freight truck" />
                   <span>Long-Distance Freight</span>
                 </div>
 
@@ -169,18 +157,12 @@ export default function App() {
                 </div>
 
                 <div className="vehicle-image-card">
-                  <img
-                    src="/cargo-1.jpg"
-                    alt="Cargo handling operations"
-                  />
+                  <img src="/cargo-1.jpg" alt="Cargo handling operations" />
                   <span>Cargo Handling</span>
                 </div>
 
                 <div className="vehicle-image-card">
-                  <img
-                    src="/courier-1.jpg"
-                    alt="Express courier delivery"
-                  />
+                  <img src="/courier-1.jpg" alt="Express courier delivery" />
                   <span>Express Courier</span>
                 </div>
 
@@ -232,9 +214,10 @@ export default function App() {
               support services.
             </p>
             <p>
-              Our mission is to provide professional logistics and transportation
-              services that ensure timely delivery of goods while maintaining the
-              highest standards of safety, efficiency and customer satisfaction.
+              Our mission is to provide professional logistics and
+              transportation services that ensure timely delivery of goods while
+              maintaining the highest standards of safety, efficiency and
+              customer satisfaction.
             </p>
           </div>
 
