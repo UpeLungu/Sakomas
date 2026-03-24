@@ -360,10 +360,15 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="contact-card">
-                <div className="label">Email</div>
-                <div className="contact-value">sakomaslogistics@co.zm</div>
-              </div>
+         <div className="contact-card">
+          <div className="label">Email</div>
+          <a 
+          href="mailto:info@sakomas.org" 
+            className="contact-value"
+            >
+            info@sakomas.org
+            </a>
+            </div>
 
               <div className="contact-card">
                 <div className="label">Location</div>
