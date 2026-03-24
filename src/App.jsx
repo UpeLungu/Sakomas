@@ -42,6 +42,7 @@ export default function App() {
     "Trade Empire",
     "Decor Logistics",
     "Rockview University",
+     "Sinoma",
   ];
 
   const compliance = [
