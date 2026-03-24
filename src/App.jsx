@@ -7,7 +7,7 @@ export default function App() {
     {
       title: "Freight Transport",
       description:
-        "Reliable road freight transportation across Zambia for safe, efficient, and timely movement of goods between suppliers, warehouses, distribution centers, and customers.",
+        "Reliable road freight transportation across Zambia for safe, efficient and timely movement of goods between suppliers, warehouses, distribution centers, and customers.",
     },
     {
       title: "Cargo Handling",
