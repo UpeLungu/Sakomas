@@ -105,22 +105,59 @@ export default function App() {
               </a>
             </div>
 
-            <div className="transport-showcase">
-              <div className="transport-track">
-                <div className="vehicle-card">🚚 Long-Distance Freight</div>
-                <div className="vehicle-card">🚐 Business Delivery</div>
-                <div className="vehicle-card">📦 Cargo Handling</div>
-                <div className="vehicle-card">🏍️ Express Courier</div>
-                <div className="vehicle-card">🚛 Bulk Transport</div>
+           <div className="transport-showcase">
+  <div className="transport-track">
+    <div className="vehicle-image-card">
+      <img src="/truck-1.jpg" alt="Long-distance freight truck" />
+      <span>Long-Distance Freight</span>
+    </div>
 
-                <div className="vehicle-card">🚚 Long-Distance Freight</div>
-                <div className="vehicle-card">🚐 Business Delivery</div>
-                <div className="vehicle-card">📦 Cargo Handling</div>
-                <div className="vehicle-card">🏍️ Express Courier</div>
-                <div className="vehicle-card">🚛 Bulk Transport</div>
-              </div>
-            </div>
-          </div>
+    <div className="vehicle-image-card">
+      <img src="/van-1.jpg" alt="Business delivery van" />
+      <span>Business Delivery</span>
+    </div>
+
+    <div className="vehicle-image-card">
+      <img src="/cargo-1.jpg" alt="Cargo handling operations" />
+      <span>Cargo Handling</span>
+    </div>
+
+    <div className="vehicle-image-card">
+      <img src="/courier-1.jpg" alt="Express courier delivery" />
+      <span>Express Courier</span>
+    </div>
+
+    <div className="vehicle-image-card">
+      <img src="/truck-2.jpg" alt="Bulk transport truck" />
+      <span>Bulk Transport</span>
+    </div>
+
+    <div className="vehicle-image-card">
+      <img src="/truck-1.jpg" alt="Long-distance freight truck" />
+      <span>Long-Distance Freight</span>
+    </div>
+
+    <div className="vehicle-image-card">
+      <img src="/van-1.jpg" alt="Business delivery van" />
+      <span>Business Delivery</span>
+    </div>
+
+    <div className="vehicle-image-card">
+      <img src="/cargo-1.jpg" alt="Cargo handling operations" />
+      <span>Cargo Handling</span>
+    </div>
+
+    <div className="vehicle-image-card">
+      <img src="/courier-1.jpg" alt="Express courier delivery" />
+      <span>Express Courier</span>
+    </div>
+
+    <div className="vehicle-image-card">
+      <img src="/truck-2.jpg" alt="Bulk transport truck" />
+      <span>Bulk Transport</span>
+    </div>
+  </div>
+</div>
 
           <div className="stats-grid">
             <div className="card dark-card">
