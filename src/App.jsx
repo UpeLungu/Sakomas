@@ -90,10 +90,10 @@ export default function App() {
         <div className="container hero-grid">
           <div>
             <div className="badge">Zambia • SADC-focused logistics partner</div>
-            <h1>Efficient, safe, and dependable logistics for growing businesses.</h1>
+            <h1>Efficient, safe and dependable logistics for growing businesses.</h1>
             <p className="hero-text">
               Sakomas Logistics Limited delivers professional freight transport,
-              cargo handling, and courier services across Zambia, with a long-term
+              cargo handling and courier services across Zambia, with a long-term
               regional outlook supporting trade and supply chain movement within SADC.
             </p>
             <div className="hero-actions">
@@ -187,14 +187,14 @@ export default function App() {
             <h2>A professional logistics partner built on reliability, safety, and service.</h2>
             <p>
               Sakomas Logistics Limited is a Zambian registered logistics and
-              transportation company committed to providing reliable, efficient,
+              transportation company committed to providing reliable, efficient
               and professional freight transport solutions. The company specializes
               in the movement of goods by road and related logistics support services.
             </p>
             <p>
               Our mission is to provide professional logistics and transportation
               services that ensure timely delivery of goods while maintaining the
-              highest standards of safety, efficiency, and customer satisfaction.
+              highest standards of safety, efficiency and customer satisfaction.
             </p>
           </div>
 
@@ -202,7 +202,7 @@ export default function App() {
             <h3>Vision</h3>
             <p>
               To become a trusted and reliable logistics service provider in Zambia
-              by delivering efficient, safe, and cost-effective transport solutions.
+              by delivering efficient, safe and cost-effective transport solutions.
             </p>
 
             <div className="divider" />
@@ -225,7 +225,7 @@ export default function App() {
           <h2>Practical transport and logistics services for daily business operations.</h2>
           <p className="section-text">
             We support the movement, handling, and delivery of goods with a service
-            model built around timeliness, safety, coordination, and dependable execution.
+            model built around timeliness, safety, coordination and dependable execution.
           </p>
 
           <div className="three-grid">
@@ -268,7 +268,7 @@ export default function App() {
           <p className="section-text">
             We have provided logistics and transportation support services to
             organizations across different sectors, building relationships grounded
-            in reliability, professionalism, and consistent service delivery.
+            in reliability, professionalism and consistent service delivery.
           </p>
 
           <div className="client-grid">
@@ -284,7 +284,7 @@ export default function App() {
       <section id="compliance" className="section section-light">
         <div className="container">
           <div className="section-tag">Corporate Identity &amp; Compliance</div>
-          <h2>Structured for lawful, responsible, and accountable operations.</h2>
+          <h2>Structured for lawful, responsible and accountable operations.</h2>
 
           <div className="compliance-grid">
             <div className="card">
