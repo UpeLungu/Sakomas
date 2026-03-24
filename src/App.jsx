@@ -54,7 +54,6 @@ export default function App() {
 
   return (
     <div className="site-shell">
-      {/* HEADER */}
       <header className="topbar">
         <div className="container topbar-inner">
           <div className="brand">
@@ -86,24 +85,17 @@ export default function App() {
         </div>
       </header>
 
-      {/* HERO */}
       <section className="hero">
         <div className="hero-glow" />
         <div className="container hero-grid">
-          <div className="hero-left">
+          <div>
             <div className="badge">Zambia • SADC-focused logistics partner</div>
-
-            {/* FIX: allow wrapping */}
-            <h1 className="hero-title">
-              Efficient, safe, and dependable logistics for growing businesses.
-            </h1>
-
+            <h1>Efficient, safe, and dependable logistics for growing businesses.</h1>
             <p className="hero-text">
               Sakomas Logistics Limited delivers professional freight transport,
               cargo handling, and courier services across Zambia, with a long-term
               regional outlook supporting trade and supply chain movement within SADC.
             </p>
-
             <div className="hero-actions">
               <a className="btn btn-primary" href="#contact">
                 Request Transport Support
@@ -113,29 +105,23 @@ export default function App() {
               </a>
             </div>
 
-            {/* VEHICLE ANIMATION */}
             <div className="transport-showcase">
               <div className="transport-track">
-
-                {/* You can replace emojis with images later */}
                 <div className="vehicle-card">🚚 Long-Distance Freight</div>
                 <div className="vehicle-card">🚐 Business Delivery</div>
                 <div className="vehicle-card">📦 Cargo Handling</div>
                 <div className="vehicle-card">🏍️ Express Courier</div>
                 <div className="vehicle-card">🚛 Bulk Transport</div>
 
-                {/* loop */}
                 <div className="vehicle-card">🚚 Long-Distance Freight</div>
                 <div className="vehicle-card">🚐 Business Delivery</div>
                 <div className="vehicle-card">📦 Cargo Handling</div>
                 <div className="vehicle-card">🏍️ Express Courier</div>
                 <div className="vehicle-card">🚛 Bulk Transport</div>
-
               </div>
             </div>
           </div>
 
-          {/* RIGHT SIDE */}
           <div className="stats-grid">
             <div className="card dark-card">
               <div className="label">Established</div>
@@ -157,9 +143,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* REST UNCHANGED */}
-      {/* KEEPING EVERYTHING EXACTLY AS YOU HAD IT */}
-
       <section id="about" className="section section-light">
         <div className="container about-grid">
           <div>
@@ -168,7 +151,8 @@ export default function App() {
             <p>
               Sakomas Logistics Limited is a Zambian registered logistics and
               transportation company committed to providing reliable, efficient,
-              and professional freight transport solutions.
+              and professional freight transport solutions. The company specializes
+              in the movement of goods by road and related logistics support services.
             </p>
             <p>
               Our mission is to provide professional logistics and transportation
@@ -189,14 +173,137 @@ export default function App() {
             <h3>Why Partner With Us</h3>
             <div className="mini-grid">
               {highlights.map((item) => (
-                <div key={item} className="pill-box">{item}</div>
+                <div key={item} className="pill-box">
+                  {item}
+                </div>
               ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* FOOTER */}
+      <section id="services" className="section">
+        <div className="container">
+          <div className="section-tag">Services</div>
+          <h2>Practical transport and logistics services for daily business operations.</h2>
+          <p className="section-text">
+            We support the movement, handling, and delivery of goods with a service
+            model built around timeliness, safety, coordination, and dependable execution.
+          </p>
+
+          <div className="three-grid">
+            {services.map((service) => (
+              <div key={service.title} className="card service-card">
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-dark">
+        <div className="container two-grid">
+          <div>
+            <div className="section-tag dark-tag">Ideal Clients</div>
+            <h2>Built to support multiple sectors across Zambia and beyond.</h2>
+            <p className="dark-text">
+              Our services are designed to support logistics operations within Zambia
+              and across the wider SADC region, enabling smoother trade, supply chain
+              coordination and regional commerce.
+            </p>
+          </div>
+
+          <div className="list-grid">
+            {idealClients.map((item) => (
+              <div key={item} className="list-card">
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="clients" className="section">
+        <div className="container">
+          <div className="section-tag">Past &amp; Current Clients</div>
+          <h2>Organizations we have supported.</h2>
+          <p className="section-text">
+            We have provided logistics and transportation support services to
+            organizations across different sectors, building relationships grounded
+            in reliability, professionalism, and consistent service delivery.
+          </p>
+
+          <div className="client-grid">
+            {clients.map((client) => (
+              <div key={client} className="client-card">
+                {client}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="compliance" className="section section-light">
+        <div className="container">
+          <div className="section-tag">Corporate Identity &amp; Compliance</div>
+          <h2>Structured for lawful, responsible, and accountable operations.</h2>
+
+          <div className="compliance-grid">
+            <div className="card">
+              <p>
+                Sakomas Logistics Limited operates in compliance with the legal and
+                regulatory requirements governing businesses in Zambia. The company
+                maintains the registrations and compliance structures needed to support
+                responsible logistics operations and employee welfare.
+              </p>
+            </div>
+
+            <div className="list-grid">
+              {compliance.map((item) => (
+                <div key={item} className="plain-list-card">
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="section">
+        <div className="container">
+          <div className="contact-box">
+            <div>
+              <div className="section-tag">Contact</div>
+              <h2>Let’s support your transportation needs.</h2>
+              <p className="section-text">
+                If you are looking for reliable and professional logistics services,
+                Sakomas Logistics Limited is ready to support your operations with
+                efficient, safe, and timely solutions tailored to your business requirements.
+              </p>
+            </div>
+
+            <div className="contact-grid">
+              <div className="contact-card">
+                <div className="label">Phone</div>
+                <div className="contact-value">+260 978757953 / 0955 966559</div>
+              </div>
+              <div className="contact-card">
+                <div className="label">Email</div>
+                <div className="contact-value">sakomaslogistics@co.zm</div>
+              </div>
+              <div className="contact-card">
+                <div className="label">Location</div>
+                <div className="contact-value">Plot No. 1557 along Lumumba Road, Lusaka</div>
+              </div>
+              <a className="btn btn-dark-full" href="https://wa.me/260978757953">
+                Chat on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer className="footer">
         <div className="container footer-inner">
           <p>© 2026 Sakomas Logistics Limited. All rights reserved.</p>
