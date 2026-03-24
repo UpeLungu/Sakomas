@@ -104,6 +104,22 @@ export default function App() {
                 View Services
               </a>
             </div>
+
+            <div className="transport-showcase">
+              <div className="transport-track">
+                <div className="vehicle-card">🚚 Long-Distance Freight</div>
+                <div className="vehicle-card">🚐 Business Delivery</div>
+                <div className="vehicle-card">📦 Cargo Handling</div>
+                <div className="vehicle-card">🏍️ Express Courier</div>
+                <div className="vehicle-card">🚛 Bulk Transport</div>
+
+                <div className="vehicle-card">🚚 Long-Distance Freight</div>
+                <div className="vehicle-card">🚐 Business Delivery</div>
+                <div className="vehicle-card">📦 Cargo Handling</div>
+                <div className="vehicle-card">🏍️ Express Courier</div>
+                <div className="vehicle-card">🚛 Bulk Transport</div>
+              </div>
+            </div>
           </div>
 
           <div className="stats-grid">
