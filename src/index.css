@@ -462,7 +462,6 @@ a {
   font-size: 0.95rem;
 }
 
-/* transport strip */
 .transport-showcase {
   margin-top: 2rem;
   overflow: hidden;
@@ -476,22 +475,34 @@ a {
   display: flex;
   gap: 1rem;
   width: max-content;
-  animation: moveVehicles 18s linear infinite;
+  animation: moveVehicles 22s linear infinite;
   padding-left: 0;
 }
 
-.vehicle-card {
+.vehicle-image-card {
   flex: 0 0 auto;
-  padding: 0.85rem 1.1rem;
-  border-radius: 999px;
+  width: 210px;
+  border-radius: 18px;
+  overflow: hidden;
   background: rgba(255, 255, 255, 0.08);
-  color: white;
-  font-weight: 600;
-  font-size: 0.95rem;
   border: 1px solid rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(6px);
-  white-space: nowrap;
-  max-width: 85vw;
+}
+
+.vehicle-image-card img {
+  width: 100%;
+  height: 125px;
+  object-fit: cover;
+  display: block;
+}
+
+.vehicle-image-card span {
+  display: block;
+  padding: 0.85rem 1rem;
+  color: white;
+  font-weight: 600;
+  font-size: 0.92rem;
+  line-height: 1.3;
 }
 
 @keyframes moveVehicles {
